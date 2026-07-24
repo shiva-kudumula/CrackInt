@@ -1,0 +1,56 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background-color: #111827;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+body{
+    margin:0;
+}
+
+nav div {
+    display: flex;
+    gap: 25px;
+}
+
+nav button,
+nav a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.register-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.register-btn:hover {
+    background-color: #2563eb;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,22 @@
+.question-header {
+    display: flex;
+    
+    align-items: center;
+}
+
+.speak-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.speech-error {
+    color: #b42318;
+    margin: 0.75rem 0;
+}
+
+.speech-status {
+    color: #175cd3;
+    margin: 0.75rem 0;
+}

@@ -1,11 +1,11 @@
-# Dependencies
+
 **/node_modules/
 
-# Environment files
+
 **/.env
 
-# Build output
+
 frontend/dist/
 
-#uploads
+
 backend/uploads/*

@@ -22,7 +22,7 @@ function Register() {
   setError("");
 
   axios
-  .post("http://localhost:5000/register", {
+  .post("https://crackint.onrender.com/register", {
     name,
     email,
     password,

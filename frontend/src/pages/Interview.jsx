@@ -58,7 +58,7 @@ function Interview() {
         if (cachedToken && cachedToken.expiresAt > Date.now()) return cachedToken.token;
 
         if (!tokenRequestRef.current) {
-            tokenRequestRef.current = axios.get("http://localhost:5000/speech-token")
+            tokenRequestRef.current = axios.get("https://crackint.onrender.com/speech-token")
                 .then((response) => {
                     const token = response.data.token;
                     // The backend token can be redeemed for 60 seconds. Leave a small buffer.
@@ -229,7 +229,7 @@ function Interview() {
     const handleSubmit = async () => {
         try {
             const response = await axios.post(
-                "http://localhost:5000/submit-interview",
+                "https://crackint.onrender.com/submit-interview",
                 { interviewId, questions },
                 { headers: { Authorization: `Bearer ${localStorage.getItem("token")}` } },
             );

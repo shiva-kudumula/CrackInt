@@ -14,7 +14,7 @@ function Login() {
     event.preventDefault();
 
   axios
-  .post("http://localhost:5000/login", {
+  .post("https://crackint.onrender.com/login", {
     email,
     password,
   })
@@ -25,7 +25,7 @@ function Login() {
     
 
     axios
-      .get("http://localhost:5000/dashboard", {
+      .get("https://crackint.onrender.com/dashboard", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

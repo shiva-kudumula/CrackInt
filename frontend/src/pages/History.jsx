@@ -13,7 +13,7 @@ function History() {
 
         const token = localStorage.getItem("token");
 
-        const response = await axios.get("http://localhost:5000/interviews", {
+        const response = await axios.get("https://crackint.onrender.com/interviews", {
             headers: {
                 Authorization: `Bearer ${token}`
             }

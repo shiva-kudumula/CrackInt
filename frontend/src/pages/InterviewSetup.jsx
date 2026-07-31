@@ -32,7 +32,7 @@ function InterviewSetup() {
         }
 
         const response = await axios.post(
-            "http://localhost:5000/interview",
+            "https://crackint.onrender.com/interview",
             {
                 role,
                 difficulty,
